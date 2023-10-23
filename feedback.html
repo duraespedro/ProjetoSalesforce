@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Acessibilidade - Salesforce Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Salesforce Acessível</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="documetacao.html">Busca de Documentação</a></li>
+            <li><a href="acessibilidade.html">Configurações de Acessibilidade</a></li>
+            <li><a href="perfil.html">Perfil do Usuário</a></li>
+            <li><a href="feedback.html">Feedback de Acessibilidade</a></li>
+            <li><a href="organograma.html">Organograma das Páginas</a></li>
+            <li><a href="equipe.html">Conheça Nossa Equipe</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <img src="https://seeklogo.com/images/S/salesforce-logo-F6B237ABDC-seeklogo.com.png" alt="Logo da Salesforce" width="200">
+            <h2>Feedback de Acessibilidade</h2>
+            <p>Nós valorizamos o seu feedback para melhorar a acessibilidade da plataforma Salesforce. Por favor, compartilhe suas sugestões, relatórios de problemas ou elogios relacionados à acessibilidade abaixo.</p>
+            
+            <!-- Formulário de Feedback -->
+            <form action="process_feedback.php" method="post">
+                <label for="feedback-type">Tipo de Feedback:</label>
+                <select id="feedback-type" name="feedback-type">
+                    <option value="suggestion">Sugestão</option>
+                    <option value="bug-report">Relatório de Problema</option>
+                    <option value="compliment">Elogio</option>
+                </select>
+                
+                <label for="feedback-message">Mensagem:</label>
+                <textarea id="feedback-message" name="feedback-message" rows="4" cols="50" required></textarea>
+                
+                <button type="submit">Enviar Feedback</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
